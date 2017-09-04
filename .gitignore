@@ -65,3 +65,4 @@ iOSInjectionProject/
 contents.xcworkspacedata
 *.lock
 Pods
+.DS_Store
