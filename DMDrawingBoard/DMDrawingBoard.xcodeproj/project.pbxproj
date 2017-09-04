@@ -13,9 +13,13 @@
 		6B3D14AB1F5D28140029E58D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D14A91F5D28140029E58D /* Main.storyboard */; };
 		6B3D14AD1F5D28140029E58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D14AC1F5D28140029E58D /* Assets.xcassets */; };
 		6B3D14B01F5D28140029E58D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D14AE1F5D28140029E58D /* LaunchScreen.storyboard */; };
+		6B3D14E01F5D5EA20029E58D /* DMDrawingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D14DF1F5D5EA20029E58D /* DMDrawingBoardView.m */; };
+		6B3D14E41F5D67B80029E58D /* DMStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D14E31F5D67B80029E58D /* DMStroke.m */; };
+		CA9F5374E1510B57DCEB239D /* libPods-DMDrawingBoard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F54A8D8C313BA1818AA2C6CC /* libPods-DMDrawingBoard.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B384553D03A29410DB1728D /* Pods-DMDrawingBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMDrawingBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMDrawingBoard/Pods-DMDrawingBoard.debug.xcconfig"; sourceTree = "<group>"; };
 		6B3D149D1F5D28140029E58D /* DMDrawingBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMDrawingBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B3D14A11F5D28140029E58D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B3D14A31F5D28140029E58D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,13 @@
 		6B3D14AC1F5D28140029E58D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B3D14AF1F5D28140029E58D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B3D14B11F5D28140029E58D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B3D14DE1F5D5EA20029E58D /* DMDrawingBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDrawingBoardView.h; sourceTree = "<group>"; };
+		6B3D14DF1F5D5EA20029E58D /* DMDrawingBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMDrawingBoardView.m; sourceTree = "<group>"; };
+		6B3D14E11F5D631C0029E58D /* DMDrawingBoard.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDrawingBoard.pch; sourceTree = "<group>"; };
+		6B3D14E21F5D67B80029E58D /* DMStroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMStroke.h; sourceTree = "<group>"; };
+		6B3D14E31F5D67B80029E58D /* DMStroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMStroke.m; sourceTree = "<group>"; };
+		78F556CF3A0EC49E23812DC3 /* Pods-DMDrawingBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMDrawingBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-DMDrawingBoard/Pods-DMDrawingBoard.release.xcconfig"; sourceTree = "<group>"; };
+		F54A8D8C313BA1818AA2C6CC /* libPods-DMDrawingBoard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DMDrawingBoard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +44,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9F5374E1510B57DCEB239D /* libPods-DMDrawingBoard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		423B37C0D5C996519421A00D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B384553D03A29410DB1728D /* Pods-DMDrawingBoard.debug.xcconfig */,
+				78F556CF3A0EC49E23812DC3 /* Pods-DMDrawingBoard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6B3D14941F5D28140029E58D = {
 			isa = PBXGroup;
 			children = (
 				6B3D149F1F5D28140029E58D /* DMDrawingBoard */,
 				6B3D149E1F5D28140029E58D /* Products */,
+				423B37C0D5C996519421A00D /* Pods */,
+				BA474EC95B42F5FC54E46889 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +85,10 @@
 				6B3D14A41F5D28140029E58D /* AppDelegate.m */,
 				6B3D14A61F5D28140029E58D /* ViewController.h */,
 				6B3D14A71F5D28140029E58D /* ViewController.m */,
+				6B3D14DE1F5D5EA20029E58D /* DMDrawingBoardView.h */,
+				6B3D14DF1F5D5EA20029E58D /* DMDrawingBoardView.m */,
+				6B3D14E21F5D67B80029E58D /* DMStroke.h */,
+				6B3D14E31F5D67B80029E58D /* DMStroke.m */,
 				6B3D14A91F5D28140029E58D /* Main.storyboard */,
 				6B3D14AC1F5D28140029E58D /* Assets.xcassets */,
 				6B3D14AE1F5D28140029E58D /* LaunchScreen.storyboard */,
@@ -75,8 +102,17 @@
 			isa = PBXGroup;
 			children = (
 				6B3D14A11F5D28140029E58D /* main.m */,
+				6B3D14E11F5D631C0029E58D /* DMDrawingBoard.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA474EC95B42F5FC54E46889 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F54A8D8C313BA1818AA2C6CC /* libPods-DMDrawingBoard.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B3D14B41F5D28140029E58D /* Build configuration list for PBXNativeTarget "DMDrawingBoard" */;
 			buildPhases = (
+				EBEFB8B81713B3F80191ABD3 /* [CP] Check Pods Manifest.lock */,
 				6B3D14991F5D28140029E58D /* Sources */,
 				6B3D149A1F5D28140029E58D /* Frameworks */,
 				6B3D149B1F5D28140029E58D /* Resources */,
+				4168E0E52AFFB8CF74E43F6E /* [CP] Embed Pods Frameworks */,
+				A6C96B5012C414BA645720A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,14 +184,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4168E0E52AFFB8CF74E43F6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DMDrawingBoard/Pods-DMDrawingBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6C96B5012C414BA645720A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DMDrawingBoard/Pods-DMDrawingBoard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBEFB8B81713B3F80191ABD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6B3D14991F5D28140029E58D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6B3D14A81F5D28140029E58D /* ViewController.m in Sources */,
+				6B3D14E41F5D67B80029E58D /* DMStroke.m in Sources */,
 				6B3D14A51F5D28140029E58D /* AppDelegate.m in Sources */,
 				6B3D14A21F5D28140029E58D /* main.m in Sources */,
+				6B3D14E01F5D5EA20029E58D /* DMDrawingBoardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +361,10 @@
 		};
 		6B3D14B51F5D28140029E58D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B384553D03A29410DB1728D /* Pods-DMDrawingBoard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = DMDrawingBoard/DMDrawingBoard.pch;
 				INFOPLIST_FILE = DMDrawingBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiqi.DMDrawingBoard;
@@ -283,8 +374,10 @@
 		};
 		6B3D14B61F5D28140029E58D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78F556CF3A0EC49E23812DC3 /* Pods-DMDrawingBoard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = DMDrawingBoard/DMDrawingBoard.pch;
 				INFOPLIST_FILE = DMDrawingBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiqi.DMDrawingBoard;
@@ -311,6 +404,7 @@
 				6B3D14B61F5D28140029E58D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

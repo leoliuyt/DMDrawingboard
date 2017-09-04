@@ -1,0 +1,21 @@
+//
+//  DMDrawingBoard.pch
+//  DMDrawingBoard
+//
+//  Created by lbq on 2017/9/4.
+//  Copyright © 2017年 lbq. All rights reserved.
+//
+
+#ifndef DMDrawingBoard_pch
+#define DMDrawingBoard_pch
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#define MAS_SHORTHAND_GLOBALS
+#import "Masonry.h"
+
+#endif
+#endif /* DMDrawingBoard_pch */

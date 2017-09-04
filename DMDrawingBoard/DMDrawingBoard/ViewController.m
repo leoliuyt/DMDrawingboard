@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "DMDrawingBoardView.h"
+
 
 @interface ViewController ()
+
+@property (nonatomic, strong) DMDrawingBoardView *drawingBoardView;
 
 @end
 
@@ -16,6 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self.drawingBoardView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 }
 
 
@@ -25,4 +33,12 @@
 }
 
 
+- (DMDrawingBoardView *)drawingBoardView
+{
+    if(!_drawingBoardView){
+        _drawingBoardView = [[DMDrawingBoardView alloc] init];
+        [self.view addSubview:_drawingBoardView];
+    }
+    return _drawingBoardView;
+}
 @end
