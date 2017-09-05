@@ -149,7 +149,8 @@
 				TargetAttributes = {
 					6B3D149C1F5D28140029E58D = {
 						CreatedOnToolsVersion = 8.3.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = XWNPFKK4U5;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -367,11 +368,15 @@
 			baseConfigurationReference = 5B384553D03A29410DB1728D /* Pods-DMDrawingBoard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
 				GCC_PREFIX_HEADER = DMDrawingBoard/DMDrawingBoard.pch;
 				INFOPLIST_FILE = DMDrawingBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiqi.DMDrawingBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4f9bfc4e-65c9-412b-b093-4a8ba62257a1";
+				PROVISIONING_PROFILE_SPECIFIER = all_20161011;
 			};
 			name = Debug;
 		};
@@ -380,11 +385,14 @@
 			baseConfigurationReference = 78F556CF3A0EC49E23812DC3 /* Pods-DMDrawingBoard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = DMDrawingBoard/DMDrawingBoard.pch;
 				INFOPLIST_FILE = DMDrawingBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiqi.DMDrawingBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
